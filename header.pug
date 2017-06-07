@@ -5,8 +5,8 @@ html(lang="ru-RU")
     script(src="https://use.fontawesome.com/d573432fa9.js")
   body
     header
-      div.container_12.clearfix
-        div.grid_15
+      div.topbar-wrapper
+        div.container.clearfix
           div.topbar.clearfix
             ul.topbar-menu.pull-left
               li 
@@ -51,15 +51,56 @@ html(lang="ru-RU")
                     img(src="img/insta.png" alt="Instagram")  
               div.lang 
                 div.dropdown
-                  span RUS 
-                  i(class="fa fa-chevron-down" aria-hidden="true")  
+                  span RUS  
               div.currency                
                 div.dropdown
                   span USD 
-                  i(class="fa fa-chevron-down" aria-hidden="true")
               div.userblock
                 a(class="enter" href="#")
-                  img(src="1")
                   span ВХОД
                 a(class="register" href="#")
-                  span РЕГИСТРАЦИЯ                                            
+                  span РЕГИСТРАЦИЯ
+      div.masterhead-wrapper
+        div.container                                                      
+          div.masterhead.clearfix
+            div.logo.pull-left
+              img(src="img/logo.png")
+            div.info-block.pull-left
+              div.ibupper
+                div.workhours.pull-left
+                  span Пн-Пт: 09:00-19:00, Сб-Вс: 09:00-15:00
+                div.address.pull-left
+                  span г.Киев, ул.Уличная 47
+                div.phone.pull-left
+                  span +38(063) 411-44-44
+                div.search.pull-left
+                  input(type="text" class="searchbox" placeholder="Поиск")          
+              div.iblower
+                ul.additional-menu.pull-right
+                  li 
+                    a(href="#") Оценка состояния
+                  li
+                    a(href="#") Оценка по трейд ину  
+      div.mainmenu-wrapper
+        div.container
+          div.mainmenu.clearfix
+            div.menucontainer.pull-left
+              ul
+                li
+                  a(href="#") Каталог
+                li
+                  a(href="#") Заявка на кредит под залог часов
+                li 
+                  a(href="#") Заложить часы
+                li
+                  a(href="#") Продать часы
+                li
+                  a(href="#") Комиссионная продажа
+                li 
+                  a(href="#") Скупка часов
+                li 
+                  a(href="#") Избранное  
+            div.cart.pull-right
+              div.items-quantity
+                span 5
+                          

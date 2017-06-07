@@ -1,0 +1,71 @@
+mixin menuelement(elName)
+  li
+    a(href="#")= elName
+
+   
+footer
+  div.container.clearfix
+    div.footer-nav
+      h3.footernav Навигация
+      ul
+        +menuelement("О нас")
+        +menuelement("Условия") 
+        +menuelement("Оплата") 
+        +menuelement("Доставка") 
+        +menuelement("Гарантия") 
+        +menuelement("Проверка украденных часов") 
+        +menuelement("FAQ") 
+        +menuelement("Новости") 
+        +menuelement("Статьи") 
+        +menuelement("Контакты")  
+    div.footer-nav
+      h3.footernav —
+      ul
+        +menuelement("Каталог")
+        +menuelement("Заявка на кредит под залог часов")
+        +menuelement("Заложить часы")
+        +menuelement("Продать часы")
+        +menuelement("Комиссионная продажа")
+        +menuelement("Скупка часов")
+        +menuelement("Избранное")
+    div.footer-nav
+      h3.footernav Оценка
+      ul
+        +menuelement("Оценка состояния")
+        +menuelement("Оценка по трейд ину")     
+      h3.footernav.topspace —
+      ul
+        +menuelement("Возможность оплаты")
+      img.bitcoin(src="img/bitcoin.png" alt="Bitcoin") 
+    div.footer-nav
+      h3.footernav МЫ в соцсетях
+      ul.social-links
+        li
+          a(href="#")
+            img(src="img/facebook.png" alt="Facebook")
+        li
+          a(href="#")
+            img(src="img/vk.png" alt="Vkontakte")
+        li
+          a(href="#")
+            img(src="img/twitter.png" alt="Twitter")
+        li
+          a(href="#")
+            img(src="img/google.png" alt="Google Plus")
+        li
+          a(href="#")
+            img(src="img/ok.png" alt="Odnoklasniki")
+        li
+          a(href="#")
+            img(src="img/insta.png" alt="Instagram")  
+        h3.footernav.cont НАШи контакты
+        p.cont +38(063) 411-44-44
+        p.cont info@site.com
+        p.cont г.Киев, ул.Уличная 47
+div.sub-footer
+  div.container.clearfix
+    div.copyright.pull-left 
+      span © 2007-2017 
+      span Ломбард «Циферблат».
+    div.counter.pull-right  
+      img(src="img/li-counter.png")
