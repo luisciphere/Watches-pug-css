@@ -381,6 +381,12 @@ header {
   background-color: #0a224b;
 }
 
+.masterhead-wrapper {
+	background: #001c4b url('img/footer-bg.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
 .topbar-wrapper {
   background-color: #061d45;
 }
@@ -388,7 +394,6 @@ header {
 .topbar-menu {
   margin-top: 10px;
   margin-bottom: 12px;
-  margin-right: 20px;
 }
 
 .topbar-menu li {
@@ -408,7 +413,7 @@ header {
 }
 
 .social-links {
-  margin-top: 5px;
+  margin-top: 9px;
   float: left;
 }
 
@@ -423,8 +428,8 @@ header {
 
 .lang, .currency {
   float: left;
-  margin-left: 28px;
-  margin-top: 10px;
+  margin-left: 10px;
+  margin-top: 12px;
   color: #59667d;
   font-size: 12px;
 }
@@ -434,7 +439,7 @@ header {
 }
 
 .currency {
-  margin-left: 19px;
+  margin-left: 10px;
 }
 
 .dropdown:after {
@@ -458,6 +463,9 @@ a i {
 
 .userblock {
   float: left;
+	margin-top: 8px;
+	margin-left: 18px;
+	padding-top: 5px;
 }
 
 .userblock a {
@@ -465,14 +473,25 @@ a i {
   font-size: 12px;
 }
 
-.userblock:before {
+.enter:before {
 	content: "";
 	display: block;
 	background: url("img/userpic.png") no-repeat;
 	width: 14px;
 	height: 14px;
 	float: left;
-	margin: 2px 5px 0 0;
+	margin: -2px 5px 0 0;
+}
+
+.enter {
+	display: block;
+	float: left;
+}
+
+.register {
+	display: block;
+	margin-left: 4px;
+	float: left;
 }
 
 .logo {
