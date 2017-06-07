@@ -1,0 +1,31 @@
+mixin singleArticle(image)
+  div.single-article.clearfix
+    div.article-prev-pic
+      img(src=image)
+    div.article-prev-content
+      div.date 01.01.2017
+      div.prev-headings
+        h2.prev-title Rolex Cellini Moonphase
+        p Первая модель Rolex с индикацией фаз луны с начала 50-х годов прошлого века.
+          
+    
+
+include header.pug
+
+
+div.container
+  h1.pageheading Новости
+  div.breadcrumbs 
+    a.root(href="#") Главная 
+    a.current(href="#") Швейцарские часы
+  div.newsblock.clearfix
+    include sidebar.pug
+    div.newslist
+      +singleArticle("img/watch-placeholder.jpg")
+      +singleArticle("img/watch-placeholder.jpg")
+      +singleArticle("img/watch-placeholder.jpg")
+    include pagination.pug  
+      
+      
+
+include footer.pug

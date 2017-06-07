@@ -1,0 +1,34 @@
+mixin sideElm(elemName)
+  li
+    input(type="checkbox")
+    label= elemName
+
+div.sidebar.clearfix
+  h4 БРЕНДЫ
+  div.sidebarmenu.brands
+    ul
+      +sideElm("Antoine Martin")
+      +sideElm("BREITLING")
+      +sideElm("BREQUET")
+      +sideElm("CARL F. BUCHERER")
+      +sideElm("CARTIER")
+      +sideElm("CORUM")
+      +sideElm("FRANCK MULLER")
+      +sideElm("GIRARD PERREGAUX")
+      +sideElm("HUBLOT")
+      a.morebrands(href="#") Все бренды
+  h4.sex ПОЛ
+  div.sidebarmenu.sex 
+    ul
+      +sideElm("Женские")
+      +sideElm("Мужские")
+      +sideElm("Унисекс")    
+  h4.mech МЕХАНИЗМ
+  div.sidebarmenu.mc
+    ul
+      +sideElm("автокварц")
+      +sideElm("кварцевый аналоговый")
+      +sideElm("кварцевый жидкокристаллический")
+      +sideElm("кварцевый комбинированный")
+      +sideElm("механика с автоподзаводом")
+      +sideElm("механика с ручным подзаводом")
