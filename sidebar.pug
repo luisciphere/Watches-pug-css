@@ -1,9 +1,12 @@
 mixin sideElm(elemName)
   li
-    input(type="checkbox")
-    label= elemName
+    div.checkbox
+      label
+        input(type="checkbox")
+        span=elemName
+    
 
-div.sidebar.clearfix
+div.sidebar
   h4 БРЕНДЫ
   div.sidebarmenu.brands
     ul

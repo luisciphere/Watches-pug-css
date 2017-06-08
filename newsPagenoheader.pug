@@ -13,7 +13,13 @@ mixin singleArticle(image)
           
     
 
-include header.pug
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="style.css")
+    script(src="https://use.fontawesome.com/d573432fa9.js")
+body    
 
 
 div.container
@@ -39,5 +45,3 @@ div.container
             include pagination.pug  
       
       
-
-include footer.pug
